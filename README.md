@@ -2,6 +2,8 @@
 
 Simple event delegation
 
+Currently only supports browsers with the [`Element.prototype.matches` method](http://caniuse.com/#feat=matchesselector)
+
 ## API
 ```javascript
 var deligate = require('deligate');
