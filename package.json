@@ -1,0 +1,29 @@
+{
+  "name": "deligate",
+  "version": "1.0.0",
+  "description": "simple event delegation",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allouis/deligate.git"
+  },
+  "keywords": [
+    "delegate",
+    "deligate",
+    "event",
+    "delegation"
+  ],
+  "author": "Fabien O'Carroll <fabien@allou.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allouis/deligate/issues"
+  },
+  "homepage": "https://github.com/allouis/deligate#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.1"
+  }
+}
