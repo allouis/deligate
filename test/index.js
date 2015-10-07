@@ -91,6 +91,15 @@ test('the returned function', function(t){
         t.end()
     })
 
+    t.test('it calls the handler fn with the same context it is called with', function(t){
+        var context = {}
+        var handler = deligate('.selector', function(){
+            t.equals(context, this, 'context of handler fn is same as returned fn')
+            t.end()
+        })
+        handler.call(context, fakeEvent)
+    })
+
     t.end()
 
 })
