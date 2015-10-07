@@ -6,7 +6,7 @@ function deligate(selector, handler) {
     if (typeof handler != 'function') throw new Error(handler_error)
     return function deligated(event) {
         if (event.target.matches(selector)) {
-            return handler(event)
+            return handler.call(this, event)
         }
     }
 }
